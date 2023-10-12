@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>World Happyiness</title>
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/style2.css" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
+</head>
+
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span><font face="Arial Rounded MT Bold">
+              World Happiness</font>
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html"><font face="Arial Rounded MT Bold">
+                    Home </font><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="methods.html"><font face="Arial Rounded MT Bold">
+                    Methods </font></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  <!-- about section -->
+  <section class="about_section ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/about-img.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2 style="margin-left:30px;"><font face="Arial Rounded MT Bold">Methodologies</font>
+              </h2>
+            </div>
+            <p style="margin-left:30px;font-size: 1.02rem;">
+              To provide a clearer understanding of the visual
+              methodologies employed in this project, each visualization
+              tool used will be presented on this page. This will assist
+              the audience in comprehending the data and the insights gained
+              from each visualization. The tools used, including choropleth maps,
+              bubble plots, and box plots, were selected based on their ability to
+              communicate the relationship between selected variables in a clear
+              and concise manner. By presenting each tool individually, the audience
+              will be able to appreciate the different aspects of the data that were
+              revealed through the visualizations. Moreover, this section will show the final dataset we use.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+  </div>
+</body>
+
+<center>
+<h2 style="margin-top: 30px"> <font face="Arial Rounded MT Bold">Combine_data.csv: Dataset Overview</font></h2>
+<p style="font-weight:bold"> <a href="../data/combine_data.csv">Combine_data.csv</a> was combined by three raw datasets, which are <a href="../data/WorldHappiness_Corruption_2015_2020.csv">WorldHappiness_Corruption_2015_2020.csv</a>
+  , <a href="../data/life_ladder.xls"> life_ladder.xls</a>, and <a href="../data/world_bank.csv">world_bank.csv</a>
+  </p>
+<iframe src="../img/Data_Table.html"  width="70%" height="700"></iframe></center>
+
+<center>
+  <table >
+    <h2 style="margin-top: 30px"> <font face="Arial Rounded MT Bold">
+      Combine_data.csv: Variables Overview</font></h2>
+    <thead>
+      <tr>
+        <th scope="col">Variable Name</th>
+        <th scope="col">Type</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Variable Name">Year</td>
+        <td data-label="Type"> float</td>
+        <td data-label="Description">The year, from 2008 to 2021
+      </tr>      
+      <tr>
+        <td data-label="Variable Name">Continent</td>
+        <td data-label="Type"> string</td>
+        <td data-label="Description">Continent Name(Asia, Europe, North America, South America, Africa, Oceania)
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Country</td>
+        <td data-label="Type"> string</td>
+
+        <td data-label="Description">Country Name, total 143 countries
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Country Code</td>
+        <td data-label="Type"> string</td>
+
+        <td data-label="Description">Country Code from ISO 3166-1 alpha-3
+      </tr>
+
+      <tr>
+        <td data-label="Variable Name">Happiness Score</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">Happiness Score with range from 0 to 10
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Log GDP</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">Purchasing Power Parity (PPP) in constant 2017 international dollars. Uses the natural log of GDP per capita, as this form fits the data significantly better than GDP per capita.
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Social Support</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">The average of binary responses (0=no, 1=yes) from the question: 'If you were in trouble, do you have relatives or friends you can count on to help you whenever you need them, or not?'
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Health</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">Life expectancy based on the health
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Freedom</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">The average of binary responses (0=no, 1=yes) from the question: 'Are you satisfied or dissatisfied with your freedom to choose what you do with your life?'
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Generosity</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">The average of binary responses (0=no, 1=yes) from the question: 'Have you donated money to a charity in the past month?'
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Corruption</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">The average of binary answers to two questions: 'Is corruption widespread throughout the government in this country or not?' and 'Is corruption widespread within businesses in this country or not?'
+      </tr>
+
+      <tr>
+        <td data-label="Variable Name">Positive Affect</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">The average of previous-day affect measures for laughter, enjoyment, and doing or learning something interesting
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Negative Affect</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">The average of previous-day affect measures for worry, sadness, and anger
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Confidence</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">The average of binary responses (0=no, 1=yes) from the question: 'Are you confident in your government?'
+      </tr>
+      <tr>
+        <td data-label="Variable Name">CO2 Emissions</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">Total CO2 emissions with kt unit
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Population</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">Total population
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Unemployment</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">The percentage of the unemployment rate of total labor force
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Education</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">Total number of children not attending primary school
+      </tr>
+      <tr>
+        <td data-label="Variable Name">Adjusted Net National Income</td>
+        <td data-label="Type"> float</td>
+
+        <td data-label="Description">Adjusted net national income in current U.S. dollars
+      </tr>
+    </tbody>
+  </table>
+</center>
+
+<center>
+  <table>
+    <h2 style="margin-top: 30px"> <font face="Arial Rounded MT Bold">
+      Data Visualization Methodologies</font></h2>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Code</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <td data-label="Name">Figure 1: Choropleth Map</td>
+        <td data-label="Description">
+          The choropleth map was created using Plotly in Python. The Scattergeo() function was utilized to 
+          map the world and annotate emojis for each country. The slider located at the bottom of the graph 
+          can adjust the year variable to indicate happiness scores for different years. The metric used to 
+          measure the happiness score of each country is the "Happiness Score" variable. The histogram 
+          distribution of the “Happiness Score” indicates that approximately one-third of the variable is 
+          around 4.5, while two-thirds are around 6. The metric is used to label the countries with emojis. 
+        </td>
+        <td data-label="Code"><a href="../code/choropleth_final.html">Link</a>
+      </tr>
+      <tr>
+        <td data-label="Name">Figure 2: Boxplot</td>
+        <td data-label="Description">To observe the distribution of the happiness score, a Boxplot was created using Plotly. The "go.Box()" method was combined with "add_trace()" to add each continent as a different trace to the figure. The "visible" method was then set to true to display all the traces together. Additionally, to compare the Happiness Scores of different continents in the same year, the 'boxmode = group' parameter was used to display the different continents together.
+        </td>
+        <td data-label="Code"><a href="../code/Happiness_Boxplot.html">Link</a>
+          </tr>
+      <tr>
+        <td data-label="Name">Figure 3 & Figure 4: Bar Plot and Line Plot</td>
+        <td data-label="Description">
+          <p>To compare the happiness scores of each continent and 12 countries, 
+            we chose to draw bar and line plots in Python using Altair. In Figure 3, 
+            the Y-axis displays the 6 continents, and the X-axis represents the average 
+            happiness score for each continent. In the bar plot shown in Figure 4, 
+            the Y-axis displays the average happiness score of the 12 selected countries, 
+            and the X-axis displays the names of the 12 countries. The line plot in Figure 4 
+            displays the happiness score on the Y-axis, the year on the X-axis, and the colors 
+            in the plot represent the different countries.</p>
+          <p>Furthermore, the bar and line plots are combined in one graph. 
+            The bar plot in both Figure 3 and Figure 4 is arranged by average 
+            happiness scores from highest to lowest. Additionally, in Figure 4, 
+            clicking on the bar of any country in the bar plot displays the 
+            corresponding country's happiness scores over the years in the line plot. 
+            The high-to-low ranking helps readers better compare the average happiness scores 
+            of different continents or countries.</p>
+        </td>
+        <td data-label="Code"><a href="../code/bar_line.html">Link</a>
+          </tr>
+          <tr>
+            <td data-label="Name">Figure 5: Heatmap</td>
+            <td data-label="Description">To show the correlation among different variables, the "df.corr()" method was used to
+              calculate the correlation values of every numerical variable. The "go.Heatmap()" method was used to visualize the
+              correlation coefficient matrix, with red representing positive correlation and blue representing negative correlation.
+              The "colorscale" parameter was used to set the color scheme. The depth of color indicates the strength of the
+              correlation, with deeper colors indicating higher correlation values. In addition to the color, the "hoverongaps"
+              parameter was set to True to display the correlation coefficient value when hovering over a cell. The "hovertemplate"
+              parameter was also set to show the correlation coefficient value and the names of the two variables.</td>
+            <td data-label="Code"><a href="../code/Heatmap.html">Link</a>
+              </tr>
+          <tr>
+            <td data-label="Name">Plot 6: Line Plot</td>
+            <td data-label="Description">
+              <p>
+                This line plot was created using Plotly and Python to illustrate the changes in Positive Affect and Negative Affect
+              from 2008 to 2021 across six continents. The plot was generated using the "go.Scatter()" method. It uses the same
+              color for each continent through the "legendgroup" parameter in "go.Scatter()". However, to differentiate between
+              Positive and Negative Affect, the Negative Affect line style was changed to a dashed line generated by the
+              "dash='dash'" parameter.
+              </p> 
+              <p>
+                Additionally, to provide more information about the Positive or Negative Affect values, year, and continent, the
+              "hovertemplate" parameter was used. This allows for customization of the hover tooltip to display relevant information
+              when hovering over a data point.
+              </p>
+          
+            </td>
+            <td data-label="Code"><a href="../code/LineChart_Affect.html">Link</a>
+          </tr>
+          <tr>
+        <td data-label="Name">Plot 7: Scatter Plot</td>
+        <td data-label="Description">To investigate whether freedom to make life choices affects happiness, 
+          we created a scatterplot with a trendline and a boxplot with X and Y axes. The X and Y axes 
+          in Figure 7 represent the values of two variables (happiness score and freedom), 
+          and the colors represent different continents. The scatterplot is used to observe the 
+          relationship between freedom to make life choices and happiness among the six continents, 
+          while the box plot is used to examine the minimum, maximum, and median values of happiness 
+          scores and freedom for the six continents. We generated the plot using the Plotly library in Python, 
+          using the "px.scatter()" function to create the scatterplot and "marginal" and "trendline" 
+          to add the box and line.</td>
+        <td data-label="Code"><a href="../code/scatter.html">Link</a>
+      </tr>
+      <tr>
+            <td data-label="Name">Plot 8: Bubble Plot</td>
+            <td data-label="Description">To show the relationship between the average happiness index and GDP per capita for
+              each country, a bubble chart was chosen as the visualization tool. The chart consists of bubbles, where the
+              position of the bubble on the X and Y axes represents the values of the two variables, and the size of the bubble
+              represents the value of the third variable. Bubble charts are a good choice for visualizing data sets with
+              multiple variables and comparing their relationships. Additionally, when viewers hover over each point, they can
+              easily see information about the country, population, and happiness index that the point represents. The bubble
+              chart also includes a time slider, which allows viewers to observe changes in the relationships between the
+              variables over time.
+            </td>
+            <td data-label="Code"><a href="../code/bubble_plot.html">Link</a>
+      </tr>
+      <tr>
+        <td data-label="Name">Figure 9: Parallel Coordinate Chart
+        </td>
+        <td data-label="Description">To examine the relationship between the Happiness score and the other four variables simultaneously, we created a parallel coordinate graph. The x-axis of the graph represents the four quantitative attributes: Social support, Healthy life expectancy at birth, Confidence in the national government, Corruption, and Happiness score. The y-axis represents the values of each dimension. Each line represents each continent for each year. The chart is colored using a color scale that is defined based on the Happiness score of each country. The graph is generated using the Plotly library in Python, with the "go.Figure()" function, and the "go.Parcoords" function is used to create the parallel coordinate graph.
+        </td>
+        <td data-label="Code"><a href="../code/parallel_plot.html">Link</a>
+      </tr>
+      <tr>
+        <td data-label="Name">Figure 10: Radar Plot & Bar Chart
+        </td>
+        <td data-label="Description"> These two plots were created using Plotly in Python. To enhance visualization, the five thetas in the radar plot were normalized using the min-max feature scaling method. This method brings all values into the range of [0, 1]. To apply this method, each value needs to be normalized by subtracting the minimum value and dividing by the difference between the maximum and minimum values. After normalization, all components are able to share the same polar axis. In the next step, twelve traces were created and grouped by continent, resulting in six groups. Each trace represents one subplot of the radar plot or bar chart with a single continent. Finally, a subplot was created, and all traces were added to it.
+        </td>
+        <td data-label="Code"><a href="../code/radar_chart.html">Link</a>
+      </tr>
+    </tbody>
+  </table>
+</center>
+
+<!-- Appendix & Reference -->
+<center>
+  <table>
+    <h2 style="margin-top: 30px"> <font face="Arial Rounded MT Bold">
+      Appendix</font></h2>
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody >
+      <tr>
+        <td data-label="Name">Appendix A: Data Source</td>
+        <td data-label="Description"><p><a href="https://www.kaggle.com/datasets/eliasturk/world-happiness-based-on-cpi-20152020">WorldHappiness_Corruption: Turk, Elias. “Happiness and Corruption 2015-2020.” Kaggle, 11 Oct. 2022.</a></p>
+          <p><a href="https://worldhappiness.report/ed/2022/">Life_Ladder: Helliwell, J. F., Layard, R., Sachs, J. D., De Neve, J.-E., Aknin, L. B., & Wang, S. (Eds.). (2022).</a></p>
+          <p><a href="https://databank.worldbank.org/embed/happiness-data/id/1d38fdc3">World Bank: “World Development Indicators.” The World Bank, 30 Mar. 2023.</a></p>
+        
+      </tr>      
+      <tr>
+        <td data-label="Name">Appendix B: Code</td>
+        <td data-label="Description"><p>Github Link: <a href="https://github.com/anly503/spring2023-project-team-6">https://github.com/anly503/spring2023-project-team-6</a></p>
+      
+      </tr>
+      <tr>
+        <td data-label="Name">Appendix C: Reference</td>
+        <td data-label="Description"><p><a href="https://databank.worldbank.org/embed/happiness-data/id/1d38fdc3">World Happiness Report 2022. New York: Sustainable Development Solutions Network.</a></p>
+
+      </tr>
+    </tbody>
+  </table>
+</center>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+  <!-- four faces -->
+  <center>
+    <svg class="sad" width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="sad" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0, 0)">
+            <circle id="body" fill="#ce90b5" cx="22" cy="22" r="22"></circle>
+            <g id="face" transform="translate(13.000000, 20.000000)">
+                <g class="face">
+                <path d="M7,4 C7,5.1045695 7.8954305,6 9,6 C10.1045695,6 11,5.1045695 11,4" class="mouth" stroke="#2C0E0F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" transform="translate(9.000000, 5.000000) rotate(-180.000000) translate(-9.000000, -5.000000) "></path>
+                <ellipse class="right-eye" fill="#2C0E0F" cx="16.0941176" cy="1.75609756" rx="1.90588235" ry="1.75609756"></ellipse>
+                <ellipse class="left-eye" fill="#2C0E0F" cx="1.90588235" cy="1.75609756" rx="1.90588235" ry="1.75609756"></ellipse>
+              </g>
+            </g>
+        </g>
+    </svg>
+      
+    <svg class="neutral" width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g>
+            <circle id="body" fill="#f5e775" cx="22" cy="22" r="22"></circle>
+            <g class="face">
+              <g transform="translate(13.000000, 20.000000)" fill="#2C0E0F">
+                <g class="mouth">
+                    <g transform="translate(9, 5)" >
+                      <rect x="-2" y="0" width="4" height="2" rx="2"></rect>
+                    </g>
+                  </g>
+                  <ellipse class="right-eye" cx="16.0941176" cy="1.75" rx="1.90588235" ry="1.75"></ellipse>
+                  <ellipse class="left-eye" cx="1.90588235" cy="1.75" rx="1.90588235" ry="1.75"></ellipse>
+              </g>
+            </g>
+        </g>
+    </svg>
+  
+    <svg class="fine" width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="fine-emotion" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="fine">
+                <circle id="body" fill="#afc5f6" cx="22" cy="22" r="22"></circle>
+                <g class="matrix" transform="translate(22.000000, 32.000000)">
+                <g class="face-container">
+                  <g class="face" transform="translate(-9, -12)">
+                    <g class="face-upAndDown">
+                    <g class="eyes">
+                    <ellipse class="right-eye" fill="#2C0E0F" cx="16.0941176" cy="1.75609756" rx="1.90588235" ry="1.75609756"></ellipse>
+                    <ellipse class="left-eye" fill="#2C0E0F" cx="1.90588235" cy="1.75609756" rx="1.90588235" ry="1.75609756"></ellipse></g>
+                    <path d="M6.18823529,4.90499997 C6.18823529,5.95249999 7.48721095,7 9.08957864,7 C10.6919463,7 11.990922,5.95249999 11.990922,4.90499997" id="mouth" stroke="#2C0E0F" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </g>
+                </g>
+                </g>
+              </g>
+            </g>
+        </g>
+    </svg>
+  
+    <svg class="happy" width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g id="Happy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0, 0)">
+              <circle id="Body" fill="#b3e89a" cx="22" cy="22" r="22"></circle>
+            <g class="scaleFace">
+              <g class="face">  
+                <ellipse id="Eye-right" fill="#2C0E0F" cx="29.0875" cy="21.75" rx="1.89926471" ry="1.75"></ellipse>
+                  <ellipse id="Eye-left" fill="#2C0E0F" cx="14.8992647" cy="21.75" rx="1.89926471" ry="1.75"></ellipse>
+                  <path d="M21.8941176,27.8819633 C24.8588235,27.8819632 25.4941176,25.5404999 25.4941176,24.5648901 C25.4941176,23.5892803 24.4352941,23.9795242 22.1058824,23.9795242 C19.7764706,23.9795242 18.2941176,23.5892803 18.2941176,24.5648901 C18.2941176,25.5404999 18.9294118,27.8819633 21.8941176,27.8819633 Z" id="Mouth" fill="#2C0E0F"></path>
+                  <ellipse id="Tung" fill="#E23D18" cx="21.8941176" cy="26.4390244" rx="1.69411765" ry="0.780487805"></ellipse>
+              </g>  
+          </g>
+      </svg>
+    </center>
+    <!-- four faces -->
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>ANLY 503 Final Project
+    </p>
+    <p>Group 06 --- Yunhong Yang, Ziyue Li, Yutao Chen, Xioadan Lu
+      <p>Theme by <b
+        ><a href="https://www.free-css.com/free-css-templates/page290/brighton">Free CSS and </a><b
+        ><a href="https://codepen.io/your-work">CodePen</a>
+      </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script><script  src="js/script2.js"></script>
+
+</body>
+  
+</div>
+</body>
+</html>

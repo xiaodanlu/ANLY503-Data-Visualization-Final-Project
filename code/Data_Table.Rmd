@@ -1,0 +1,30 @@
+
+```{r echo=FALSE, message=FALSE}
+## Import Package
+library(DT)
+library(dplyr)
+## Import Data
+df <- read.csv("../data/combine_data.csv")
+## Edit Data
+### Drop Columns
+df = subset(df, select = -c(X, Time.Code))
+### Change Column Names
+colnames(df) <- c("Country", "Year", "Happiness Score", "Log GDP", "Social Support", "Health", "Freedom", "Generosity", "Corruption", "Positive Affect", "Negative Affect", "Confidence", "Continent", "Country Code", "CO2 Emissions", "Population", "Unemployment", "Education", "Adjusted Net National Income")
+### Change Order of Columns
+df <- df[, c(2,13,1,14,3,4,5,6,7,8,9,10,11,12,15,16,17,18,19)]
+### Round Number in Columns
+df <- df %>%  mutate_if(is.numeric, ~round(., 4))
+### Remove Scientific Format
+options(scipen = 999)
+### Render Table
+datatable(df, class = 'hover stripe', filter = 'top', extension = 'Buttons',
+          caption = htmltools::tags$caption(style = 'caption-side: Top; text-align: left;',
+          'Table 1: ', htmltools::em('This table is composed of three data sets.')),
+          options = list(dom = '<"top"Bf>rt<"bottom"lip><"clear">', autoWidth = TRUE, scrollX = TRUE,
+                         lengthMenu = list(c(10,25,50), c(10,25,50)),
+                         buttons = list('copy', 'print', 
+                                   list(extend = 'collection', buttons = c('csv', 'excel', 'pdf'), 
+                                        text = 'Download'))
+          ) 
+ )
+```
